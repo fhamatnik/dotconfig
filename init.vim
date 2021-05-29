@@ -1,15 +1,12 @@
 set encoding=utf-8
 set splitbelow
 set noswapfile
-set scrolloff=7 
+set scrolloff=7
 set backspace=indent,eol,start
 set cursorline
+let mapleader = ","
 
 " Python specific
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set expandtab
 set autoindent
 set fileformat=unix
 
@@ -24,14 +21,15 @@ Plug 'tpope/vim-commentary'
 Plug 'farmergreg/vim-lastplace'
 Plug 'itchyny/lightline.vim'
 Plug 'jacoborus/tender.vim'  " theme
+Plug 'sheerun/vim-polyglot'
 
 
 " Initialize plugin system
 call plug#end()
 
 
-let g:ale_linters = {'python': ['flake8', 'pylint'],}
-let g:ale_fixers = {'python': ['black'],}
+let g:ale_linters = {'python': ['flake8']}
+let g:ale_fixers = {'python': ['black']}
 let g:ale_fix_on_save = 1
 
 let g:deoplete#enable_at_startup = 1
@@ -46,3 +44,4 @@ set termguicolors
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 colorscheme tender
 let g:lightline_theme = 'tender'
+set noshowmode
