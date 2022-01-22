@@ -32,7 +32,6 @@ call plug#end()
 
 
 let g:ale_linters = {'python': ['flake8']}
-let g:alle_python_flake8_options = '--config ~/.config/flake8'
 let g:ale_fixers = {
 	    \ '*': ['remove_trailing_lines', 'trim_whitespace'],
 			\ 'python': ['black', 'isort'],
