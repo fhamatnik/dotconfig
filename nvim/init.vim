@@ -51,3 +51,6 @@ set termguicolors
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 colorscheme tender
 set noshowmode
+
+" Snippets
+nnoremap ,py :-1read ~/.config/nvim/snippets/python.py<CR>jo
